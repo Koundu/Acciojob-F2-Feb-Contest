@@ -12,10 +12,18 @@ function PrintStudentswithMap() {
 
 function PrintStudentsbyForEach() {
   //Write your code here , just console.log
+      arr.forEach(({name, marks})=>{
+        if(marks>50){
+            console.log(name);
+        }
+    },[])
 }
 
 function addData() {
   //Write your code here, just console.log
+     const person = {id: "4", name:"Lenovo", age:"22", marks:"80"};
+    arr.push(...person);
+    console.log(arr);
 }
 
 function removeFailedStudent() {
@@ -24,4 +32,7 @@ function removeFailedStudent() {
 
 function concatenateArray() {
   //Write your code here, just console.log
+      let arr1 = [{ id: 4, name: "Lenovo", age: "24", marks: 70 }]
+    const arr3 = arr.concat(arr1);
+    console.log(arr3);
 }
